@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .icons{
+        @apply text-3xl border cursor-pointer rounded-md border-gray-500 p-2 hover:bg-emerald-600 hover:border-emerald-600 duration-200
+    }
+}
+
+
+
+@layer base {
+    .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .link {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    .link:hover {
+        color: aliceblue;
+    }
+
+    button,
+    [type='button'],
+    [type='reset'],
+    [type='submit'] {
+        background-color: white;
+        background-image: none;
+    }
+
+    .bg-color {
+        background-color: #0f172a;
+    }
+
+    .text-color1 {
+        color: #fafafa;
+    }
+
+    .text-color2 {
+        color: #72e2ae;
+    }
+
+    .logo {
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid;
+        border-color: #72e2ae;
+        cursor: pointer;
+    }
+}
