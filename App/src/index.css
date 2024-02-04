@@ -2,15 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .icons{
+@layer components {
+    .icons {
         @apply text-3xl border cursor-pointer rounded-md border-gray-500 p-2 hover:bg-emerald-600 hover:border-emerald-600 duration-200
     }
+     .button{
+         @apply py-3 px-5 text-center font-semibold rounded-sm hover:bg-slate-700 duration-200 hover:rounded-s-3xl
+     }
+    .sidebar {
+        @apply w-20 h-full border-r border-gray-200 flex flex-col justify-around items-center px-3
+       
+    }
+
+    .main {
+        @apply flex-1 px-5 h-full overflow-auto
+    }
+
+    /*  about page */
+    .about_page{
+        @apply my-20 flex items-center justify-between
+    }
+    .about_page img{
+        @apply w-full rounded-md h-96 border-8 border-emerald-600 hover:border-emerald-500
+    }
+
+    .my_services{
+        @apply mb-20 flex items-center justify-between flex-wrap
+    }
+
+    /*  about page  end here*/
 }
 
 
 
 @layer base {
+    body {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        background-color: #0f172a;
+    }
+
+    p {
+        line-height: 1.5rem;
+        word-wrap: break-word;
+    }
+
     .wrapper {
         padding-left: 50px;
         padding-right: 50px;
@@ -21,12 +58,15 @@
         font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
+        margin-left: 30px;
     }
 
     .link:hover {
         color: aliceblue;
     }
-
+   .scroll_none::-webkit-scrollbar{
+    display: none;
+   }
     button,
     [type='button'],
     [type='reset'],
@@ -55,4 +95,47 @@
         border-color: #72e2ae;
         cursor: pointer;
     }
+ 
+    .page_heading {
+        font-size: 80px;
+        text-align: center;
+        font-style: italic;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        opacity: .4;
+        font-weight: 500;
+    }
+
+    .page_border {
+        width: 300px;
+        height: 5px;
+        background-color: #72e2ae9e;
+        margin: auto;
+        border-radius: 100px;
+        position: relative;
+    }
+
+    .page_border span {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 12px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: #f1f1f1;
+        animation: border;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+   @keyframes border {
+       from {
+        left: 0; 
+       }
+       to{
+        left: 297px; 
+       }
+   }
+
 }

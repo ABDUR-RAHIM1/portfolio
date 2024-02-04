@@ -1,13 +1,15 @@
 import React from 'react'
-import HomeSidebar from '../components/Home/HomeSidebar'
 import HomeMain from '../components/Home/HomeMain'
+import Layout from '../components/Layout'
 
 function Home() {
     return (
-        <div className=' w-full h-screen bg-color flex justify-between text-white overflow-hidden'>
-            <HomeSidebar />
-            <HomeMain />
-        </div>
+        <Layout  >
+
+            <div className="main text-white flex items-center justify-center h-full ">
+                <HomeMain />
+            </div>
+        </Layout>
     )
 }
 
