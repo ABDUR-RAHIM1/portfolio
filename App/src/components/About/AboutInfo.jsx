@@ -8,13 +8,13 @@ function AboutInfo() {
   return (
     <div className='my-24 '>
       <Heading text="about" />
-      <div className='about_page'>
+      <div className='about_page flex-wrap'>
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: "2" }}
-          className="w-48">
+          className=" w-full md:w-48">
           <img src={images} alt="" />
         </motion.div>
         <motion.div
@@ -22,7 +22,7 @@ function AboutInfo() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: "1" }}
-          className='w-48 '>
+          className=' w-full md:w-48 '>
           {
             aboutData && aboutData.map((ab, index) => (
               <li key={index} className=' text-lg text-emerald-500 capitalize my-4 italic'>
@@ -30,7 +30,7 @@ function AboutInfo() {
                 <span className='text-white'>
                   {ab.key} <span className='ml-4 text-white'>: {ab.value}</span>
                 </span>
-
+ 
               </li>
             ))
           }

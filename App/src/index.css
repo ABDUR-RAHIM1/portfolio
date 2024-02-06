@@ -26,7 +26,7 @@
     /*  about page */
     .about_page {
         @apply my-20 flex items-center justify-between
-    }
+}
 
     .about_page img {
         @apply w-full rounded-md h-96 border-8 border-emerald-600 hover:border-emerald-500
@@ -62,12 +62,7 @@
     }
 
     /*  resume end */
-
-
-    /* works  */
-    /* .my_works {
-        @apply 
-    } */
+ 
     .filterBtnArea {
         @apply text-center my-10 bg-slate-800
     }
@@ -98,7 +93,13 @@
         font-style: normal;
         background-color: #0f172a;
     }
-
+    .costomeHeight{
+         height: 95vh;
+         clear: both;
+         position: absolute;
+         left: 0;
+         bottom: 0;
+    }
     p {
         line-height: 1.5rem;
         word-wrap: break-word;
@@ -114,6 +115,7 @@
         font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
+        margin: 10px 0px;
         margin-left: 30px;
     }
 
@@ -230,6 +232,14 @@
         height: 100%;
     }
 
+    .navbar-toggler button, [type='button'], [type='reset'], [type='submit'] {
+        border: 2px solid #10b981;
+        background-color: whitesmoke; 
+        color: white;
+    }
+
+
+    
     /*  sweper js  */
 
 
@@ -249,6 +259,20 @@
         height: 100%;
         object-fit: cover;
     }
-
+    @media screen and (min-width: 440px) {
+        .swiper-container {
+          width: 400px;
+        }
+      }
+    @media screen and (max-width: 640px) {
+        .swiper-container {
+          width: 600px;
+        }
+      }
+    @media screen and (max-width: 768px) {
+        .swiper-container {
+          width: 750px;
+        }
+      }
 
 }

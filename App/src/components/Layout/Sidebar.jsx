@@ -2,7 +2,7 @@ import React from 'react'
 import logo from "../../images/logo.png"
 import Icons from '../../Data/Icons'
 import { motion } from 'framer-motion'
-
+import {Link} from "react-router-dom"
 function Sidebar() {
   return (
     <div className='sidebar'>
@@ -12,7 +12,9 @@ function Sidebar() {
         viewport={{ once: true }}
         transition={{ duration: "1" }}
         className="profile">
-        <img className='logo' src={logo} alt="" />
+        <Link to="/" >
+          <img className='logo' src={logo} alt="" />
+        </Link>
       </motion.div>
       <motion.div
         initial={{ x: -20 }}
