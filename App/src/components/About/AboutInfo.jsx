@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../Heading'
+import Heading from '../Utilies/Heading'
 import aboutData from '../../Data/About'
 import images from "../../images/logo.png"
 import { motion } from "framer-motion"

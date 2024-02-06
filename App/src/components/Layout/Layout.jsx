@@ -6,7 +6,7 @@ function Layout({ children }) {
         <div className=' w-full h-screen bg-color flex justify-between text-white overflow-hidden'>
             <Sidebar />
 
-            <div className='main'>
+            <div className='main scroll_none'>
                 {children}
             </div>
         </div>

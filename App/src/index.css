@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+    .page_heading {
+        @apply md:text-8xl text-4xl text-center italic uppercase opacity-30 font-semibold tracking-wide
+    }
+
     .icons {
         @apply text-3xl border cursor-pointer rounded-md border-gray-500 p-2 hover:bg-emerald-600 hover:border-emerald-600 duration-200
     }
@@ -37,6 +41,43 @@
     }
 
     /*  about page  end here*/
+
+    /*  resume */
+
+
+    .skilsItems {
+        @apply flex items-center justify-between flex-wrap mt-5 duration-500
+    }
+
+    .my_resume {
+        @apply flex items-start justify-between flex-wrap my-10
+    }
+
+    .side {
+        @apply w-full md:w-48 my-5
+    }
+
+    .side h2 {
+        @apply text-lg md:text-2xl mb-12 capitalize
+    }
+
+    /*  resume end */
+
+
+    /* works  */
+    /* .my_works {
+        @apply 
+    } */
+    .filterBtnArea {
+        @apply text-center my-10 bg-slate-800
+    }
+
+    .filterBtn {
+        @apply my-3 mx-3 py-2 px-4 bg-emerald-300 text-black text-center font-semibold rounded-sm hover:bg-white duration-200
+    }
+
+    /* works  end */
+
 }
 
 
@@ -75,13 +116,7 @@
         display: none;
     }
 
-    button,
-    [type='button'],
-    [type='reset'],
-    [type='submit'] {
-        background-color: white;
-        background-image: none;
-    }
+
 
     .bg-color {
         background-color: #0f172a;
@@ -119,17 +154,6 @@
         transform: rotate(-15deg);
     }
 
-
-    .page_heading {
-        font-size: 80px;
-        text-align: center;
-        font-style: italic;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        opacity: .4;
-        font-weight: 500;
-    }
-
     .page_border {
         width: 300px;
         height: 5px;
@@ -164,8 +188,37 @@
         }
     }
 
- 
+    .card_color {
+        background-color: #162033;
+        border: 1px solid #2d3647;
+        transition: .5s;
+        border-radius: 10px;
+    }
 
+    .card_color:hover {
+        transform: translateY(-15px);
+    }
+
+
+
+    .projectImgBg {
+        width: 0%;
+        height: 0%;
+        background-color: rgb(1 7 26 / 82%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .5s all ease;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+       gap: 2;
+    }
+    .projectImg:hover .projectImgBg {  
+         width: 100%;
+         height: 100%; 
+    }
     /*  sweper js  */
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from "../images/logo.png"
-import Icons from '../Data/Icons'
+import logo from "../../images/logo.png"
+import Icons from '../../Data/Icons'
 import { motion } from 'framer-motion'
 
 function Sidebar() {
