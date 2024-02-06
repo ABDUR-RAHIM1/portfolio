@@ -78,6 +78,15 @@
 
     /* works  end */
 
+    /* contact page */
+       .contact_area{
+        @apply flex items-center justify-between flex-wrap mt-10
+       }
+     .inputs{
+        @apply bg-slate-800 border border-slate-700  text-sm rounded-lg block w-full p-2.5     
+     }
+    /* contact page end here */
+
 }
 
 
@@ -212,13 +221,15 @@
         overflow: hidden;
         display: flex;
         align-items: center;
-       justify-content: center;
-       gap: 2;
+        justify-content: center;
+        gap: 2;
     }
-    .projectImg:hover .projectImgBg {  
-         width: 100%;
-         height: 100%; 
+
+    .projectImg:hover .projectImgBg {
+        width: 100%;
+        height: 100%;
     }
+
     /*  sweper js  */
 
 

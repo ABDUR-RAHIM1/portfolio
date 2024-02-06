@@ -11,7 +11,7 @@ function My_services() {
                 {
                     servicesData && servicesData.map((sv, index) => (
                         <motion.div
-                            initial={{ opacity: 0, scale: 0 }}
+                            initial={{ opacity: 0, scale: .5 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }} 
                              className='card_color my-5 w-full md:w-31 shadow-md  p-3' key={index}>

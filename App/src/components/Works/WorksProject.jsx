@@ -31,7 +31,7 @@ function WorksProject(props) {
     <div className='flex items-center justify-between flex-wrap relative'>
       {
         project &&
-        project.map((wrk, index) => (
+        project.slice().reverse().map((wrk, index) => (
           <Projects key={index} data={wrk} handleImageClick={handleImageClick} />
         ))
       }

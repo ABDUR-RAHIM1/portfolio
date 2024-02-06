@@ -5,7 +5,7 @@ import WorksProject from '../components/Works/WorksProject'
 
 function Works() {
   const Btn = ["All", "Static", "React", "Node"]
- const [filter , setFilter] = useState("all")
+ const [filter , setFilter] = useState("react")
 
  const handleClick =(e)=>{
   const text = (e.target.innerText).toLowerCase()

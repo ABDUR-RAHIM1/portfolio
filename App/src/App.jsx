@@ -5,6 +5,7 @@ import About from './pages/About'
 import Resume from './pages/Resume'
 import Header from './components/Utilies/Header'
 import Works from './pages/Works'
+import Contact from './pages/Contact'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/resume' element={<Resume />} />
         <Route path='/my-works' element={<Works />} />
+        <Route path='/contact' element={<Contact />} />
       </Routes>
     </>
   )
