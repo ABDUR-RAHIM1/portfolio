@@ -1,11 +1,11 @@
 import React from 'react'
-import logo from "../../images/logo.png"
+import logo from "../../images/image.jpg"
 import Icons from '../../Data/Icons'
 import { motion } from 'framer-motion'
 import {Link} from "react-router-dom"
 function Sidebar() {
   return (
-    <div className='sidebar'>
+    <div className='sidebar '>
       <motion.div
         initial={{ y: -20 }}
         whileInView={{ y: 0 }}
@@ -21,6 +21,7 @@ function Sidebar() {
         whileInView={{ x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: "1" }}
+        className='m-auto'
       >
         {
           Icons && Icons.map((ic, index) => (
@@ -33,7 +34,8 @@ function Sidebar() {
         whileInView={{ y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: "1" }}
-        className='w-full h-8 bg-emerald-600 rounded-full' >  </motion.div>
+        className='w-full h-8 bg-emerald-600 rounded-full flex items-center justify-center' >  AB </motion.div>
+        
     </div>
   )
 }

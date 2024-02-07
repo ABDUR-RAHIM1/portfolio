@@ -6,7 +6,7 @@ function Home() {
     return (
         <Layout  >
 
-            <div className="main text-white flex items-center justify-center h-full ">
+            <div className=" text-white flex items-center justify-center h-full ">
                 <HomeMain />
             </div>
         </Layout>

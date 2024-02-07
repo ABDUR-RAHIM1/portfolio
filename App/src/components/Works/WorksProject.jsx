@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { worksData } from '../../Data/Works'
 import { motion } from "framer-motion"
-import { FaUnlink, FaFileImage } from "react-icons/fa";
-import { IoMdClose } from "react-icons/io";
+import { FaUnlink, FaFileImage , FaAppStore  , FaArtstation  } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io"; 
 
 function WorksProject(props) {
   const { filterText } = props;
@@ -71,8 +71,8 @@ export const Projects = (props) => {
         </div>
       </div>
       <div className='my-3 px-2'>
-        <h4 className='text-xl capitalize mb-3'> <span className='capitalize text-emerald-400'>technology : </span> {tech}</h4>
-        <p>{title}</p>
+        <h4 className='text-xl capitalize mb-3 flex items-center gap-3'>  <span className='text-2xl text-emerald-400'><FaAppStore /></span> {tech}</h4>
+        <p className='flex items-center gap-3 capitalize'>  <span className='text-2xl text-emerald-400'><FaArtstation /></span>  {title}</p>
       </div>
 
      

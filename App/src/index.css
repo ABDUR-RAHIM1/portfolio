@@ -12,11 +12,11 @@
     }
 
     .button {
-        @apply py-3 px-5 text-center font-semibold rounded-sm hover:bg-slate-700 duration-200 hover:rounded-s-3xl
+        @apply py-3 px-5 text-center font-semibold rounded-sm hover:bg-emerald-700 duration-200 hover:rounded-s-3xl
     }
 
     .sidebar {
-        @apply w-20 h-full border-r border-gray-200 flex flex-col justify-around items-center px-3
+        @apply w-20 h-full border-r border-gray-200 hidden sm:flex flex-col justify-around items-center px-3 py-10
     }
 
     .main {
@@ -26,14 +26,14 @@
     /*  about page */
     .about_page {
         @apply my-20 flex items-center justify-between
-}
+    }
 
     .about_page img {
         @apply w-full rounded-md h-96 border-8 border-emerald-600 hover:border-emerald-500
     }
 
     .my_services {
-        @apply mb-20 flex items-center justify-between flex-wrap
+        @apply my-20 flex items-center justify-between flex-wrap
     }
 
     .reviews {
@@ -62,9 +62,9 @@
     }
 
     /*  resume end */
- 
+
     .filterBtnArea {
-        @apply text-center my-10 bg-slate-800
+        @apply flex items-center justify-center gap-4 flex-wrap my-10 bg-slate-800
     }
 
     .filterBtn {
@@ -74,12 +74,14 @@
     /* works  end */
 
     /* contact page */
-       .contact_area{
+    .contact_area {
         @apply flex items-center justify-between flex-wrap mt-10
-       }
-     .inputs{
-        @apply bg-slate-800 border border-slate-700  text-sm rounded-lg block w-full p-2.5     
-     }
+    }
+
+    .inputs {
+        @apply bg-slate-800 border border-slate-700 text-sm rounded-lg block w-full p-2.5
+    }
+
     /* contact page end here */
 
 }
@@ -93,16 +95,21 @@
         font-style: normal;
         background-color: #0f172a;
     }
-    .costomeHeight{
-         height: 95vh;
-         clear: both;
-         position: absolute;
-         left: 0;
-         bottom: 0;
+ 
+    .costomeHeight {
+        height: 92vh;
+        clear: both;
+        left: 0;
+        bottom: 0;
     }
+
     p {
         line-height: 1.5rem;
+        color: gainsboro;
+        font-size: 16px;
+        font-weight: normal;
         word-wrap: break-word;
+        word-break: break-all;
     }
 
     .wrapper {
@@ -111,7 +118,7 @@
     }
 
     .link {
-        color: white;
+        color: #72e2ae;
         font-size: 16px;
         font-weight: 400;
         text-transform: uppercase;
@@ -232,14 +239,17 @@
         height: 100%;
     }
 
-    .navbar-toggler button, [type='button'], [type='reset'], [type='submit'] {
+    .navbar-toggler button,
+    [type='button'],
+    [type='reset'],
+    [type='submit'] {
         border: 2px solid #10b981;
-        background-color: whitesmoke; 
+        background-color: whitesmoke;
         color: white;
     }
 
 
-    
+
     /*  sweper js  */
 
 
@@ -259,20 +269,34 @@
         height: 100%;
         object-fit: cover;
     }
-    @media screen and (min-width: 440px) {
+
+    /* @media screen and (max-width: 440px) {
         .swiper-container {
-          width: 400px;
+            width: 400px;
         }
-      }
-    @media screen and (max-width: 640px) {
+    } */
+
+    /* @media screen and (max-width: 640px) {
         .swiper-container {
-          width: 600px;
+            width: 600px;
         }
-      }
+    } */
+
     @media screen and (max-width: 768px) {
         .swiper-container {
-          width: 750px;
+            width: 750px;
         }
-      }
+        .wrapper{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    } 
+ 
+    /* costom responsive code here */
+ 
+
+    /* costom responsive code here */
+
+
 
 }

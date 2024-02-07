@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 
 function Header() {
     return (
-        <div className='wrapper bg-color text-white sticky-top py-2 border-b border-gray-200'>
+        <div className='wrapper bg-color  sticky-top py-2 border-b border-gray-200'>
             <header>
                 <Navbar collapseOnSelect expand="lg">
                     <Link to="/">
-                        <h3 className='text-2xl italic'>ABDUR-RAHIM</h3>
+                        <h3 className='text-2xl italic' style={{color:"#72e2ae"}}>ABDUR-RAHIM</h3>
                     </Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">

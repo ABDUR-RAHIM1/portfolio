@@ -6,12 +6,10 @@ import Layout from '../components/Layout/Layout'
 
 function About() {
   return (
-    <Layout>
-      <div className="main scroll_none ">
+    <Layout> 
         <AboutInfo />
         <My_services />
-        <Reviews />
-      </div>
+        <Reviews /> 
     </Layout>
   )
 }

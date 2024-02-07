@@ -19,22 +19,7 @@ function Reviews() {
         
           slidesPerView={3}
           spaceBetween={30}
-          breakpoints={{
-            // when window width is >= 640px
-            440: {
-              width: 440,
-              slidesPerView: 1,
-            },
-            640: {
-              width: 600,
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              width: 768,
-              slidesPerView: 2,
-            },
-          }}
+          
           pagination={{
             clickable: true,
           }}
