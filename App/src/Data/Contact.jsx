@@ -1,5 +1,5 @@
 import { FaLocationArrow } from "react-icons/fa";
-import { FaPhone , FaFacebook  } from "react-icons/fa6";
+import { FaPhone   } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 export const contactInfo = [
     {
@@ -15,6 +15,6 @@ export const contactInfo = [
     {
         icon: <FaLocationArrow />,
         title: "Contact address",
-        value: ["Rangpur , lalmonirhat - 5500" ],
+        value: ["Rangpur , lalmonirhat - 5500 , bangladesh" ],
     },
 ]

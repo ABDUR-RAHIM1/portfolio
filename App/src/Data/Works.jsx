@@ -1,5 +1,4 @@
-// statics images
-import image from "../images/c1.jpg"
+// statics images 
 import img6 from  "../images/projects/p6.jpg"
 import img5 from  "../images/projects/p5.png"
 import img4 from  "../images/projects/p4.png"
@@ -15,7 +14,7 @@ import r4 from "../images/projects/r4.png"
 import r5 from "../images/projects/r5.png"
 
 
-//  node images
+//  fullstack images
 import n1 from "../images/projects/n1.png"
 import n2 from "../images/projects/n2.png"
 
@@ -36,7 +35,7 @@ export const worksData = [
      },
      {
         id:3,
-        tech : "node", 
+        tech : "fullstack", 
         title : "school-managemnt",
         link : "https://edu-shoft.netlify.app",
         image : n2
@@ -50,7 +49,7 @@ export const worksData = [
      },
      {
         id:5,
-        tech : "node" , 
+        tech : "fullstack" , 
         title : "blood donation app",
         link : "https://roktojoddha.netlify.app",
         image : n1
@@ -64,7 +63,7 @@ export const worksData = [
      },
      {
         id:7,
-        tech : "node" , 
+        tech : "fullstack" , 
         title : "demo",
         link : "https://roktojoddha.netlify.app",
         image : n1
@@ -86,7 +85,7 @@ export const worksData = [
      },
      {
         id:10,
-        tech : "node" , 
+        tech : "fullstack" , 
         title : "Cricket Academy",
         link : "https://abdur-rahim1.github.io/thca-response/",
         image : img4

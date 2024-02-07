@@ -26,8 +26,7 @@ import { Circle } from 'rc-progress';
 import Skills2 from './Skills2'
 
 export const Circles = (props) => {
-    const { title, value } = props.data
-    console.log(value) 
+    const { title, value } = props.data 
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -35,7 +34,7 @@ export const Circles = (props) => {
             transition={{duration : "2"}}
             className='w-full sm:w-48 md:w-23 card_color p-4 text-center my-4 '>
             <div className='w-8/12 m-auto relative'>
-                <Circle percent={value} trailWidth={8} strokeWidth={10} strokeColor="#00f5839e" trailColor='#72e2ae9e' >
+                <Circle percent={value} trailWidth={8} strokeWidth={9} strokeColor="#00f5839e" trailColor='#72e2ae9e' >
                 </Circle>
                 <strong className='absolute capitalize' style={{ top: "50%", left: "50%", transform: "translate(-50% , -50%)" }}>{value} %</strong>
 

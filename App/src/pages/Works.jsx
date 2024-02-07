@@ -4,7 +4,7 @@ import Heading from '../components/Utilies/Heading'
 import WorksProject from '../components/Works/WorksProject'
 
 function Works() {
-  const Btn = ["All", "Static", "React", "Node"]
+  const Btn = ["All", "Static", "React", "fullstack"]
  const [filter , setFilter] = useState("react")
 
  const handleClick =(e)=>{

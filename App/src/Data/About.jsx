@@ -5,7 +5,7 @@ const aboutData = [
     { key: "Nationality", value: "bangladeshi" },
     { key: "Languages", value: "Bangla" },
     { key: "comfortable", value: "English , hindi" },
-    { key: "Address", value: "Rangpur , lalmonirhat" },
+    { key: "Address", value: "Rangpur , Bangladesh" },
     { key: "Freelance", value: "available" },
 ]
 

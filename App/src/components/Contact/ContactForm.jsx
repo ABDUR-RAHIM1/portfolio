@@ -32,7 +32,7 @@ function ContactForm() {
       </div>
       <button className='px-4 py-2 bg-emerald-400 text-center text-black font-semibold hover:bg-emerald-700 duration-200'>Send Email</button>
       <ToastContainer
-       position="top-right"
+       position="bottom-right"
        autoClose={2000}
       />
     </form>

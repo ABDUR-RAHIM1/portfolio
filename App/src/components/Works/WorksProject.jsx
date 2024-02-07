@@ -11,8 +11,7 @@ function WorksProject(props) {
   const [imgClick , setImgClick] = useState(false)
 
 
-  const handleImageClick = (e)=>{
-     console.log(e)
+  const handleImageClick = (e)=>{ 
      setImg(e)
      setImgClick(!imgClick)
   }
@@ -38,7 +37,7 @@ function WorksProject(props) {
 
 
 
-       <div className={` ${imgClick ? "block" : "hidden"}  absolute top-0 left-0 bg-black w-full h-full overflow-y-auto scroll_none`}>
+       <div className={` ${imgClick ? "hidden md:block" : "hidden"} py-5 hidden fixed top-0 left-0 bg-black w-full h-full overflow-y-auto scroll_none`}>
            <IoMdClose onClick={()=>setImgClick(!imgClick)} className='text-red-500 text-3xl absolute top-3 right-3 cursor-pointer' />
            <img className='w-8/12 mt-20 m-auto h-auto' src={img} alt="" />
        </div>

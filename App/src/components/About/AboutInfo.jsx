@@ -2,8 +2,7 @@ import React from 'react'
 import Heading from '../Utilies/Heading'
 import aboutData from '../../Data/About'
 import images from "../../images/about.png"
-import { motion } from "framer-motion"
-import { FaDotCircle } from "react-icons/fa";
+import { motion } from "framer-motion" 
 
 function AboutInfo() {
   return (
@@ -23,15 +22,15 @@ function AboutInfo() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: "1" }}
-          className=' w-full md:w-48 '>
+          className=' w-full md:w-48 mt-4 md:mt-0'>
           {
             aboutData && aboutData.map((ab, index) => (
-          
-                <div className='text-white flex items-center justify-between text-xl mt-3'>
-                  <span className=' w-48'> <span className='text-lg text-emerald-500 mr-3'>*</span> {ab.key}</span>
-                  <span className='ml-4 text-white w-48'>: {ab.value}</span>
-                </div>
- 
+
+              <div key={index} className='capitalize text-white flex items-center justify-between text-xl mt-3'>
+                <span className=' w-48'> <span className='text-lg text-emerald-500 mr-3'>*</span> {ab.key}</span>
+                <span className='ml-4 text-white w-48'> : {ab.value}</span>
+              </div>
+
             ))
           }
           <motion.button
