@@ -4,13 +4,13 @@ import Heading from '../components/Utilies/Heading'
 import WorksProject from '../components/Works/WorksProject'
 
 function Works() {
-  const Btn = ["All", "Static", "React", "fullstack"]
- const [filter , setFilter] = useState("react")
+  const Btn = [ "React", "fullstack" , "Static", "All"]
+  const [filter, setFilter] = useState("react")
 
- const handleClick =(e)=>{
-  const text = (e.target.innerText).toLowerCase()
+  const handleClick = (e) => {
+    const text = (e.target.innerText).toLowerCase()
     setFilter(text)
- }
+  }
 
   return (
     <Layout>
@@ -18,17 +18,23 @@ function Works() {
         <Heading text="My Works" />
 
         <div className="filterBtnArea">
- 
+
 
           {
             Btn && Btn.map((btn, index) => (
-              <button onClick={handleClick} key={index} className='filterBtn '>{btn}</button>
+              <button
+              key={index}
+              className={`filterBtn ${filter === btn.toLocaleLowerCase() ? 'activeBtn' : 'bg-emerald-400'}`}
+              onClick={handleClick}
+            >
+              {btn}
+            </button>
             ))
           }
         </div>
 
         <div className="my_works">
-          <WorksProject filterText = {filter} />
+          <WorksProject filterText={filter} />
         </div>
       </div>
     </Layout>

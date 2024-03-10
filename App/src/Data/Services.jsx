@@ -15,7 +15,7 @@ const servicesData = [
     {
         icon: <FaMapPin />,
         title: "Web application",
-        desc: "I am a full stack software developer with over 2 years of experience in the field. I have a strong foundation in computer science principles and a track record of delivering high-quality, scalable software solutions. I have experience in a variety of programming."
+        desc: "I am a full stack software developer with over 1 years of experience in the field. I have a strong foundation in computer science principles and a track record of delivering high-quality, scalable software solutions. I have experience in a variety of programming."
     },
     {
         icon: <FaPager />,

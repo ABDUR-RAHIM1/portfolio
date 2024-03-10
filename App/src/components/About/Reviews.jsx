@@ -53,7 +53,7 @@ function Reviews() {
                   <img className='w-16 h-16 rounded-full translate-y-4 m-auto' src={sl.img} alt="" />
                   <div className='my-5 px-3'>
                     <h2 className='text-lg italic'>{sl.name}</h2>
-                    <small className='text-blue-600'>Client :{sl.title}</small>
+                    <small className='text-[#1da099]'>Client :{sl.title}</small>
                     <p style={{lineHeight:"1.5rem"}} className='my-3 text-sm '>
                        {sl.text}
                     </p>

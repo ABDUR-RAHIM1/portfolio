@@ -27,9 +27,11 @@
     .about_page {
         @apply my-20 flex items-center justify-between
     }
-
+    .aboutImgWrap{
+        @apply w-full md:w-48 h-[450px] md:h-[500px] border-8 border-emerald-600 hover:border-emerald-500 overflow-hidden
+    }
     .about_page img {
-        @apply w-full rounded-md h-96 border-8 border-emerald-600 hover:border-emerald-500
+        @apply w-full h-full  m-auto rounded-md 
     }
 
     .my_services {
@@ -68,9 +70,11 @@
     }
 
     .filterBtn {
-        @apply my-3 mx-3 py-2 px-4 bg-emerald-300 text-black text-center font-semibold rounded-sm hover:bg-white duration-200
+        @apply my-3 mx-3 py-2 px-4  text-black text-center font-semibold rounded-sm hover:bg-white duration-200
     }
-
+    .activeBtn{
+        @apply bg-white text-black
+    }
     /* works  end */
 
     /* contact page */
@@ -211,8 +215,12 @@
         border: 1px solid #2d3647;
         transition: .5s;
         border-radius: 10px;
+        cursor: pointer;
+        transition: 0.5s all ease;
     }
-
+   .card_color:hover{
+     box-shadow: 1px 1px 1px rgb(18, 70, 67);
+   }
     .card_color:hover {
         transform: translateY(-15px);
     }
@@ -271,6 +279,15 @@
     }
     .navUl li a{
         text-transform: uppercase;
+        transition: 0.5s all ease;
+    }
+    .active{
+        color: #72e2ae;
+        font-weight: 500;
+    }
+   
+    .navUl li a:hover{
+        color: #72e2ae;
     }
     .menuIcons{
         display: none;

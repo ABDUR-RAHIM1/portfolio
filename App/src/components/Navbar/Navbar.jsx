@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { MdMenuOpen, MdClose } from "react-icons/md";
 
 function Navbar() {
     const [menuClick, setMenuClick] = useState(true)
+    const location = useLocation()
     const items = [
         { item: "home", link: "/" },
         { item: "about", link: "/about" },
@@ -21,7 +22,9 @@ function Navbar() {
 
                     {
                         items && items.map((item, i) => (
-                            <li key={i} onClick={() => setMenuClick(!menuClick)}><Link to={item.link}>{item.item}</Link></li>
+                            <li key={i} onClick={() => setMenuClick(!menuClick)}>
+                                <Link className={location.pathname === item.link ? 'active' : ''} to={item.link}>{item.item}</Link>
+                            </li>
                         ))
                     }
                 </ul>

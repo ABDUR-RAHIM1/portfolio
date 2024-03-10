@@ -1,7 +1,7 @@
 import React from 'react'
 import Heading from '../Utilies/Heading'
 import aboutData from '../../Data/About'
-import images from "../../images/about.png"
+import images from "../../images/me.jpg"
 import { motion } from "framer-motion" 
 
 function AboutInfo() {
@@ -14,7 +14,7 @@ function AboutInfo() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: "2" }}
-          className=" w-full md:w-48">
+          className="aboutImgWrap">
           <img src={images} alt="" />
         </motion.div>
         <motion.div
